@@ -37,8 +37,8 @@ print(trapez())
 print("\nZadanie 6")
 def ciag(a=1, b=4, ile=10):
     iloczyn = a
-    for x in range(a, ile, b):
-        iloczyn *= x
+    for x in range(a, ile):
+        iloczyn = x * b
     else:
         return iloczyn
 print(ciag())
