@@ -12,8 +12,15 @@ print(plik[plik.Liczba > 1000])
 print("\nZadanie 2.2")
 print(plik[plik.Imie == "SZYMON"])
 
-print("Zadanie 2.3")
+print("\nZadanie 2.3")
 print(plik['Liczba'].sum())
 
-print("Zadanie 2.4")
+print("\nZadanie 2.4")
 print(plik[(plik.Rok >= 2000) & (plik.Rok <= 2005)]['Liczba'].sum())
+
+print("\nZadanie 3.3")
+sort = inny_plik.groupby(['Sprzedawca'])
+print(sort[['idZamowienia']].count())
+
+print("\nZadanie 3.4")
+print(inny_plik.groupby(['Kraj'])[['Utarg']].sum())
